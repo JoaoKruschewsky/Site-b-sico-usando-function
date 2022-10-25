@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPF</title>
+</head>
+
+<body>
+
+
+    <div class="conteudo">
+        <h1> Olá cidadao </h1>
+        <p> Preencha Abaixo!</p>
+
+
+        <p class="p1"> Nome</p>
+        <input class="input1" type="name" id="nome" placeholder="Insira seu nome">
+        <p class="p2"> Data de nascimento</p>
+        <input class="input2" type="date" id="data">
+        <button onclick="clickbutton()" id="button">IMPRIMIR</button>
+        <div class="resultado" type="text" id="resultado1"> </div>
+
+    </div>
+
+    <style>
+        p {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: x-large;
+            font-weight: bolder;
+
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+        }
+
+        body {
+            background-image: url('cidade.jpg')
+        }
+
+        .resultado {
+            border: 4px solid black;
+            box-shadow: 4px 4px black;
+            padding-left: 10px;
+            position: relative;
+            top: 90px;
+            margin: 0 auto;
+            background: white;
+            width: 270px;
+            height: 80px;
+
+        }
+
+        button {
+            font-size: x-large;
+            color: aliceblue;
+            background: rgb(171, 165, 165);
+            position: relative;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            top: 80px;
+            width: 150px;
+            height: 50px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .input2 {
+            font-size: larger;
+            border: 4px solid;
+            border-radius: 10px;
+            padding-left: 10px;
+            position: relative;
+            right: -60px;
+            top: 60px;
+            width: 170px;
+            margin: 0 auto;
+            height: 30px;
+        }
+
+        .p2 {
+            position: relative;
+            top: 50px;
+            font-size: x-large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .input1 {
+            border: 4px solid;
+            border-radius: 10px;
+            padding-left: 10px;
+            position: relative;
+            right: -60px;
+            top: 30px;
+            height: 20px;
+            margin: 0 auto;
+        }
+
+        .p1 {
+            color: rgb(0, 0, 0);
+            position: relative;
+            top: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: x-large;
+            margin: 0 auto;
+        }
+
+        .conteudo {
+
+            background: rgba(121, 127, 147, 0.594);
+            border: 3px solid black;
+            border-radius: 10px;
+            position: relative;
+            top: 300px;
+            width: 300px;
+            height: 500px;
+            margin: 0 auto;
+
+        }
+    </style>
+
+
+</body>
+<script>
+    function clickbutton() {
+        funcao1()
+        funcao2()
+
+
+    }
+    function funcao1() {
+        let input = document.querySelector('#nome').value
+        div.innerHTML = input
+
+    }
+    function funcao2() {
+        let input2 = document.querySelector('#data').value
+        div.inneHTML = input2
+        console.log(input2)
+    }
+
+
+
+    var div = document.querySelector('#resultado1')
+
+</script>
+
+</html>
